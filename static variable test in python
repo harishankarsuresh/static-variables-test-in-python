@@ -1,0 +1,30 @@
+class Mapping:
+    def __init__(self):
+        self.items_list = []
+        #self.__update()
+
+    def update(self):
+        print "in base update"
+        #for item in iterable:
+         #   self.items_list.append(item)
+
+        #print "i=%d" %i
+
+    __update = update   # private copy of original update() method
+
+class MappingSubclass(Mapping):
+    i=2
+
+    def update(self):
+        print "in derivedclass update"
+        # provides new signature for update()
+        # but does not break __init__()
+        #for item in zip(keys, values):
+         #   self.items_list.append(item)
+
+w=4
+t=5
+asdf=Mapping()
+zxcv=MappingSubclass()
+asdf.update()
+zxcv.update()
