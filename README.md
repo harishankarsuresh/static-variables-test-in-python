@@ -1,0 +1,1 @@
+# static-variables-test-in-python
